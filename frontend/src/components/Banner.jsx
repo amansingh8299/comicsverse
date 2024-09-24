@@ -8,12 +8,10 @@ function Banner() {
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
               Hello, welcomes here to learn something{" "}
-              <span className="text-pink-500">new everyday!!!</span>
+              <span className="text-green-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+            Welcome to ComicsVerse, where the boundaries of reality are pushed to the limits! Immerse yourself in a world of vibrant colors, daring heroes, and epic battles. Explore the infinite possibilities of the comic multiverse, where legendary characters come to life and the fate of the universe hangs in the balance. Join the quest for justice, freedom, and the ultimate power of imagination!"
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
