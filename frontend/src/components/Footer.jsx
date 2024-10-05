@@ -9,7 +9,7 @@ function Footer() {
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
         </nav>
-        <nav>
+        {/* <nav>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
@@ -45,7 +45,7 @@ function Footer() {
               </svg>
             </a>
           </div>
-        </nav>
+        </nav> */}
         <aside>
           <p>Copyright © 2024 - All right reserved by ComicVerse Industries Ltd</p>
         </aside>

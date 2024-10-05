@@ -5,7 +5,7 @@ function Cards({ item }) {
 
     useEffect(() => {
         const name = url.trim().split(" ").join("+");
-        setUrl(`https://archive.org/search?query=${name}&sin=TXT`);
+        setUrl(`https://archive.org/search?query=${name}`);
     }, []);
 
     return (

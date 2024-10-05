@@ -41,3 +41,10 @@ app.get("*", (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is listening on port http://localhost:${PORT}`);
 });
+// app.post('/contact', (req, res) => {
+//     const { name, email, message } = req.body;
+//     // Implement email sending logic using a library like Nodemailer
+//     // For demonstration purposes, we'll just log the message
+//     console.log(`Received message from ${name} (${email}): ${message}`);
+//     res.status(200).json({ message: 'Message sent successfully!' });
+// });
