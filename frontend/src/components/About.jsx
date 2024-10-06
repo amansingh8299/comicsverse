@@ -1,7 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 const AboutUs = () => {
     return (
+        <>
+        <Navbar />
         <div className="container mx-auto p-4 mt-10">
             <div className="flex flex-wrap justify-center">
                 <div className="w-full md:w-1/2 xl:w-1/2 p-6">
@@ -18,16 +22,23 @@ const AboutUs = () => {
                         </span>{" "}
                         the ultimate destination for comic book enthusiasts!
                         Explore our vast collection of comics, graphic novels,
-                        and manga from renowned publishers.
-                            Stay updated with the latest news, reviews, and
-                            discussions
-                        in the comic book community. Join our forums to connect
-                        with fellow fans, share your thoughts, and discover new
-                        titles.
+                        and manga from renowned publishers. Stay updated with
+                        the latest news, reviews, and discussions in the comic
+                        book community. Join our forums to connect with fellow
+                        fans, share your thoughts, and discover new titles.
                     </p>
                 </div>
             </div>
+            <div className="flex justify-center mt-4">
+                <Link to="/">
+                    <button className="bg-green-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+                        Back
+                    </button>
+                </Link>
+            </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

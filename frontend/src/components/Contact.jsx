@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -27,6 +28,7 @@ function Contact() {
 
     return (
         <>
+        <Navbar/>
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
                 <div className="mt-16 items-center justify-center text-center">
                     <h1 className="text-2xl  md:text-4xl">
@@ -88,6 +90,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../public/Banner.png";
+import banner from "/Banner.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 function Banner() {
@@ -11,18 +11,27 @@ function Banner() {
 
 
   return (
-    <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
-        <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
-          <div className="space-y-8">
-            <h1 className="text-2xl md:text-4xl font-bold">
-              Hello, welcomes here to learn something{" "}
-              <span className="text-green-500">new everyday!!!</span>
-            </h1>
-            <p className="text-sm md:text-xl">
-            Welcome to ComicsVerse, where the boundaries of reality are pushed to the limits! Immerse yourself in a world of vibrant colors, daring heroes, and epic battles. Explore the infinite possibilities of the comic multiverse, where legendary characters come to life and the fate of the universe hangs in the balance. Join the quest for justice, freedom, and the ultimate power of imagination!"
-            </p>
-            {/* <label className="input input-bordered flex items-center gap-2">
+      <>
+          <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
+              <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
+                  <div className="space-y-8">
+                      <h1 className="text-2xl md:text-4xl font-bold">
+                          Hello, welcomes here to learn something{" "}
+                          <span className="text-green-500">
+                              new everyday!!!
+                          </span>
+                      </h1>
+                      <p className="text-sm md:text-xl">
+                          Welcome to ComicsVerse, where the boundaries of
+                          reality are pushed to the limits! Immerse yourself in
+                          a world of vibrant colors, daring heroes, and epic
+                          battles. Explore the infinite possibilities of the
+                          comic multiverse, where legendary characters come to
+                          life and the fate of the universe hangs in the
+                          balance. Join the quest for justice, freedom, and the
+                          ultimate power of imagination!"
+                      </p>
+                      {/* <label className="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -34,18 +43,23 @@ function Banner() {
               </svg>
               <input type="text" className="grow" placeholder="Email" />
             </label> */}
+                  </div>
+                  <button
+                      onClick={handleClick}
+                      className="btn mt-6 bg-green-500 hover:bg-pink-500 text-white btn-secondary"
+                  >
+                      Get Started
+                  </button>
+              </div>
+              <div className=" order-1 w-full mt-20 md:w-1/2">
+                  <img
+                      src={banner}
+                      className="md:w-[550px] md:h-[460px] md:ml-12"
+                      alt=""
+                  />
+              </div>
           </div>
-          <button onClick={handleClick} className="btn mt-6 btn-secondary">Get Started</button>
-        </div>
-        <div className=" order-1 w-full mt-20 md:w-1/2">
-          <img
-            src={banner}
-            className="md:w-[550px] md:h-[460px] md:ml-12"
-            alt=""
-          />
-        </div>
-      </div>
-    </>
+      </>
   );
 }
 
