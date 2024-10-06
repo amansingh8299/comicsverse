@@ -31,15 +31,15 @@ function Contact() {
         <Navbar/>
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
                 <div className="mt-16 items-center justify-center text-center">
-                    <h1 className="text-2xl  md:text-4xl">
+                    <h1 className="text-2xl  md:text-4xl ">
                         Get in Touch <span className="text-green-500">:)!</span>
                     </h1>
-                    <p className="mt-12">
+                    <p className="mt-8">
                         Have a question, comment, or just want to say hi? We'd
                         love to hear from you!
                     </p>
                     <Link to="/">
-                        <button className="mt-6 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+                        <button className="mt-3 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
                             Back
                         </button>
                     </Link>
@@ -49,6 +49,7 @@ function Contact() {
                         <label>
                             Name:
                             <input
+                                placeholder="Enter your name"
                                 type="text"
                                 name="name"
                                 value={name}
@@ -59,6 +60,7 @@ function Contact() {
                         <label>
                             Email:
                             <input
+                                placeholder="Enter your email address"
                                 type="email"
                                 name="email"
                                 value={email}
@@ -69,6 +71,7 @@ function Contact() {
                         <label>
                             Message:
                             <textarea
+                            placeholder="Enter your message..."
                                 value={message}
                                 name="message"
                                 onChange={(e) => setMessage(e.target.value)}
