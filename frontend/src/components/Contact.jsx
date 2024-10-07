@@ -12,7 +12,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:4001/contact", {
+            const res = await axios.post("https://comicsverse.onrender.com/contact", {
                 name,
                 email,
                 message,
