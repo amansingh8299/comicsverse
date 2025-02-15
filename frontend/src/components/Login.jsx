@@ -17,7 +17,7 @@ function Login() {
 
         try {
             const res = await fetch(
-                "http://localhost:3000/user/login",
+                "https://comicsverse.onrender.com/user/login",
                 {
                     method: "POST",
                     headers: {
