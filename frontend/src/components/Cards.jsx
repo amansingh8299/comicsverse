@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
-
 function Cards({ item }) {
-    const [url, setUrl] = useState(item.name);
-
-    useEffect(() => {
-        const name = url.trim().split(" ").join("+");
-        setUrl(`https://archive.org/search?query=${name}`);
-    }, []);
-
     return (
         <>
-            <div className="mt-4 my-3 p-3">
+            <div className="mt-4 p-3">
                 <div className="card w-92 h-[350px] bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border ">
                     <figure>
                         <img
@@ -30,8 +21,12 @@ function Cards({ item }) {
                         <div className="card-actions justify-between">
                             {/* <div className="badge badge-outline">${item.price}</  div> */}
                             <div className="cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-green-500 hover:text-white duration-200">
-                                <a href={url}>
-                                    <button>Open to Read</button>
+                                <a
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
+                                    <button>Read here</button>
                                 </a>
                             </div>
                         </div>
